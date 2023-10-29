@@ -1,0 +1,53 @@
+<!--
+Nome: Matheus Leandro Mencucini
+Data: 29 de outubro de 2023
+Descrição: Página para calcular o ano
+nascimento com base no nome, idade e mês de
+nascimento.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Descubra o seu ano de nascimento</h2>
+
+        <div class="input-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required>
+        </div>
+
+        <div class="input-group">
+            <label for="month">Selecione o mês de Nascimento:</label>
+            <select id="month">
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+        </div>
+
+        <button onclick="calcularAnoDeNascimento()">Descobrir</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
